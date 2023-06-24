@@ -1,10 +1,13 @@
 const calcular = document.getElementById('calcular');
 
+/* esta funçao executa os valores informados na caixa de texto */
+
 function imc () {
     const nome = document.getElementById('nome').value;
     const altura = +document.getElementById('altura').value;
     const peso = +document.getElementById('peso').value;
     const resultado = document.getElementById('resultado');
+ /* Nesse código ele verifica se os campos estao preenchidos */
 
     if (nome !== '' && altura !== '' && peso !== '') {
 
@@ -28,4 +31,5 @@ function imc () {
 
 }
 
+/* evento executa todo conteudo do html informado pelo usuario */
 calcular.addEventListener('click', imc);
